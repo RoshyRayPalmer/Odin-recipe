@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:ital,wght@0,400;1,300&family=Satisfy&display=swap');
+/* font-family: 'Lobster', cursive; */
+/* font-family: 'Satisfy', cursive; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+ul{
+    list-style: none;
+}
+.logo{
+    font-family: 'Lobster', 'cursive';
+    font-weight: 600;
+    position: absolute;
+    position: fixed;
+    float: left;
+    margin-left: 40px;
+    font-size: 42px;
+    color:lavender;
+    text-transform: capitalize;
+    letter-spacing: 1.5px;
+}
+.logo a{
+    color: aliceblue !important;
+}
+h1{
+    font-size: 4rem;
+    text-transform: capitalize;
+    text-align: center;
+    padding: 22px 0;
+    color: aliceblue;
+}
+h1 a{
+    color: aliceblue !important;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 500px;
+    height: auto;
+    background-size:cover;
+    background-image:linear-gradient(rgba(1,1,15,0877), rgba(0, 0, 100, 0.396)), url(../images/pexels-karolina-grabowska-4041246.jpg) ;
+    background-repeat: no-repeat;
+    padding-bottom: 42px;
+}
+.recipes-content{
+    width: 70%;
+    height: auto;
+    margin: 16px auto;
+    color: aliceblue;
+    text-align: justify;
+    padding: 32px 0;
+    line-height: 22px;
+}
+.recipes-content h2{
+    font-size: 28px;
+    margin: 12px 0;
+}
+.ingredient{
+    display: flex;
+    margin-bottom: 32px;
+}
+.ingredient .duratation{
+    display: flex;
+    justify-content: space-between;
+    margin: 12px 0;
+}
+.duratation li{
+    font-weight: bold;
+    padding: 8px;
+    margin: 1px;
+     background-color: aliceblue;
+     color: #000;
+     width: 100%;
+}
+.ingredient img{
+    width: 350px;
+    height: 480px;
+    margin-right: 18px;
+    border: 8px solid aliceblue;
+}
+.resp-view-img{
+    display: none;
+}
+.line{
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: aliceblue;
+    margin-bottom: 4px;
+}
+.line2{
+    height: 1px;
+}
+.fa-circle-check{
+    font-size: 22px;
+    color: aliceblue;
+    margin: 12px;
+}
+.direction{
+    display: flex;
+}
+.direction img{
+    border: 8px solid oldlace;
+    margin: 52px 18px; 
+    width: 450px;
+    height: 420px;   
+}
+@media screen and (max-width:768px){
+    body{
+        height: auto;
+        padding: 0 16px;
+    }
+    .logo{
+        margin-left: 10px;
+        font-size: 32px;
+    }
+    h1{
+        font-size: 3rem;
+    }
+    .recipes-content{
+        width: 100%;
+    }
+    .ingredient{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .ingredient img{
+        width: 100%;
+        height: 300px;
+        margin-bottom: 16px;
+        display: none;
+    }
+    .ingredient .resp-view-img{
+        width: 100%;
+        height: 300px;
+        margin-bottom: 16px;
+        display: block;
+    }
+    .direction{
+        flex-wrap: wrap-reverse;        
+    }
+    .direction img{
+        width: 100%;
+        height: 300px;   
+    }
+}

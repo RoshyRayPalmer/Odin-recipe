@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:ital,wght@0,400;1,300&family=Satisfy&display=swap');
+/* font-family: 'Lobster', cursive; */
+/* font-family: 'Satisfy', cursive; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a, ul,li{
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+.logo{
+    font-family: 'Lobster', 'cursive';
+    font-weight: 600;
+    position: absolute;
+    position: fixed;
+    float: left;
+    margin-left: 40px;
+    font-size: 42px;
+    color:lavender;
+    text-transform: capitalize;
+    letter-spacing: 1.5px;
+    /* text-decoration: line-through; */
+}
+.logo a{
+    color: aliceblue !important;
+}
+h1{
+    font-size: 4rem;
+    text-transform: capitalize;
+    text-align: center;
+    padding: 22px 0;
+    color: aliceblue;
+}
+h1 a{
+    color: aliceblue !important;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-size:cover;
+    background-image:linear-gradient(rgba(1,1,15,0877), rgba(0, 0, 100, 0.396)), url(../images/pexels-karolina-grabowska-4041246.jpg) ;
+    background-repeat: no-repeat;
+    padding-bottom: 42px;
+}
+.recipes-all{
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.recipes-all .recipe{
+    margin: 8px;
+}
+
+.kebab{
+    position: relative;
+    width: 48%;
+    height: 300px;
+    background-image: url(../images/kebeb.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: .5s; 
+}
+.ht-soup{
+    position: relative;
+    width: 48%;
+    height: 300px;
+    background-image: url(../images/soupjoumou.jpeg);
+    background-size: cover;
+    background-position: center;
+    transition: .5s; 
+}
+.Italian-salad {
+    position: relative;
+    width: 48%;
+    height: 300px;
+    background-image: url(../images/italianSalad.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: .5s; 
+}
+.Pancakes {
+    position: relative;
+    width: 48%;
+    height: 300px;
+    background-image: url(../images/pancakes.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: .5s; 
+}
+.Pizza {
+    position: relative;
+    width: 48%;
+    height: 300px;
+    background-image: url(../images/pizzaTranche.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: .5s; 
+}
+.Djondjonriz {
+    position: relative;
+    width: 48%;
+    height: 300px;
+    background-image: url(../images/djondjondiri.jpeg);
+    background-size: cover;
+    background-position: center;
+    transition: .5s; 
+}
+.Spicykorean {
+    position: relative;
+    width: 48%;
+    height: 300px;
+    background-image: url(../images/korean.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: .5s; 
+}
+.salmonpasta {
+    position: relative;
+    width: 48%;
+    height: 300px;
+    background-image: url(../images/cheesypasta.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: .5s; 
+}
+.recipe:hover{
+    -ms-transform: scale(1.1); 
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); 
+}
+.recipe-desc{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    right: 0px;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    text-align: center;
+    color: #f1f1f1;
+}
+.recipe-desc h2{
+    font-family: 'Satisfy', 'cursive';
+    margin: 16px 0 4px 0;
+    font-weight: 400;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+}
+.line{
+    display: block;
+    background-color: #f1f1f1;
+    width: 90%;
+    height: 2.5px;
+    margin: 6px auto;
+    border-radius: 3px;
+}
+.line2{
+    display: block;
+    background-color: #f1f1f1;
+    width: 70%;
+    height: 2px;
+    margin: 10px auto;
+}
+@media screen and ( max-width:999px){
+    .recipes-all{
+        width: 90%;
+    }
+}
+@media screen and (max-width:750px){
+
+    h1{
+        font-size: 2.5rem;
+        margin-top: 30px;
+    }
+    .logo{
+        margin: 10px 0px 0 30px ;
+        font-size: 42px; 
+    }
+    .recipes-all{
+        width: 90%;
+    }
+    .kebab{
+        position: relative;
+        width: 100%;
+        height: 300px;       
+    }
+    .ht-soup{
+        position: relative;
+        width: 100%;
+        height: 300px;       
+    }
+    .Italian-salad{
+        position: relative;
+        width: 100%;
+        height: 300px;       
+    }
+    .Pancakes{
+        position: relative;
+        width: 100%;
+        height: 300px;       
+    }
+    .Pizza{
+        position: relative;
+        width: 100%;
+        height: 300px;       
+    }
+    .Djondjonriz{
+        position: relative;
+        width: 100%;
+        height: 300px;       
+    }
+    .Spicykorean{
+        position: relative;
+        width: 100%;
+        height: 300px;       
+    }
+    .salmonpasta{
+        position: relative;
+        width: 100%;
+        height: 300px;       
+    }
+ 
+}

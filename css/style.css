@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:ital,wght@0,400;1,300&family=Satisfy&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a, ul,li{
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+.logo{
+    font-family: 'Lobster', 'cursive';
+    font-weight: 600;
+    position: absolute;
+    position: fixed;
+    float: left;
+    margin: 10px 0px 0 30px ;
+    font-size: 52px;
+    color:lavender;
+    text-transform: capitalize;
+    letter-spacing: 1.5px;
+}
+.logo a{
+    color: aliceblue !important;
+}
+h1{
+    font-size: 4rem;
+    text-transform: capitalize;
+    text-align: center;
+    margin-top: 50px;
+    /* padding: 22px 0; */
+    color: aliceblue;
+}
+h1 a{
+    color: aliceblue !important;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-size:cover;
+    background-image:linear-gradient(rgba(1,1,15,0877), rgba(0, 0, 100, 0.396)), url(../images/pexels-karolina-grabowska-4041246.jpg) ;
+    background-repeat: no-repeat;
+}
+main{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.recipes-advive-img{
+    width: 60%;
+    height: 70vh;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    padding: 16px;
+    background-image:linear-gradient(rgba(1,1,15,0877), rgba(0, 0, 100, 0.264)), url(../images/flat-lay-food-ingredients-with-vegetables.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.recipe-advice{
+ position: absolute;
+ left: 16px;
+ bottom: 50px;
+ width: 95%;
+}
+.recipe-advice h2{
+    font-size: 32px;
+    color: aliceblue;
+}
+.recipe-advice p{
+    font-size: 20px;
+    padding: 10px 0;
+    color: aliceblue;
+    text-align: justify;
+}
+.btn-recipe{
+    padding: 10px;
+    border: 2px solid #472533;
+    font-size: 18px;
+    background: transparent;
+}
+.btn-recipe:hover{
+    box-shadow: 1px 1px 5px #472533;
+}
+.btn-recipe a{
+    color: aliceblue;
+    text-transform: capitalize;
+}
+@media screen and (max-width:750px){
+    .recipes-advive-img{
+        width: 90%;
+        height: 60vh;
+    }
+    h1{
+        font-size: 2.5rem;
+        margin-top: 110px;
+    }
+    .logo{
+        margin: 10px 0px 0 30px ;
+        font-size: 42px; 
+    }
+    .recipe-advice h2{
+        font-size: 26px;
+        color: aliceblue;
+    }
+    .recipe-advice p{
+        font-size: 18px;
+        padding: 8px 0; 
+    }
+    .recipe-advice{
+        position: absolute;
+        left: 16px;
+        bottom: 30px;
+        width: 90%;
+       }
+
+}
